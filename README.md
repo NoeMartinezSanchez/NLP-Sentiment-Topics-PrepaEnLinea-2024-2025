@@ -40,15 +40,19 @@ eliminar_stopwords()    # Filtra stopwords personalizadas (ej: "de", "que", "la"
 
 ## 📂 Estructura del Repositorio  
 
+```python
+
 data/
-├── raw/ # Comentarios crudos (CSV/JSON)
-├── processed/ # Datos limpios y vectorizados
+    ├── raw/                # Comentarios crudos (CSV/JSON)
+    ├── processed/          # Datos limpios y vectorizados
 notebooks/
-├── 1_EDA.ipynb # Análisis exploratorio
-├── 2_BERT_Sentiment.ipynb # Fine-tuning y evaluación
+    ├── 1_EDA.ipynb         # Análisis exploratorio
+    ├── 2_BERT_Sentiment.ipynb  # Fine-tuning y evaluación
 results/
-├── dashboards/ # Gráficos interactivos
-├── models/ # Modelos guardados (BERT, LDA)
+    ├── dashboards/         # Gráficos interactivos
+    ├── models/             # Modelos guardados (BERT, LDA)
+
+´´´python
 
 ## 📌 Cómo Replicar el Análisis
 
