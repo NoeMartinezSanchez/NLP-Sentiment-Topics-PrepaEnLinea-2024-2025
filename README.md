@@ -36,7 +36,7 @@ eliminar_stopwords()    # Filtra stopwords personalizadas (ej: "de", "que", "la"
 ---
 
 ### 2. Análisis por Módulo (2024)
-![Distribución por módulo 2024](images/Distribución_de_comentarios_positivos_neutros_y_negativos_por_módulo_usando_las_sugerencias_del_2024.png)
+![Distribución por módulo 2024](images/Distribución de comentarios_positivos_neutros_y_negativos_por_módulo_usando_las_sugerencias_del_2024.png)
 
 **Hallazgos clave:**  
 ✅ **Módulos destacados** (2024):  
