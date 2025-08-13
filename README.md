@@ -26,13 +26,9 @@ eliminar_stopwords()    # Filtra stopwords personalizadas (ej: "de", "que", "la"
 4. Limpieza de puntuación  
 5. Filtrado de 50+ stopwords en español  
 
-## 📊 Métricas y Hallazgos  
-1. **Distribución de sentimientos**:  
-   - 65% positivos, 25% neutros, 10% negativos (2025 vs 60%/28%/12% en 2024).  
-2. **Tópicos recurrentes**:  
-   - "Retroalimentación oportuna" (módulo 3), "Dificultad en actividades" (módulo 5).  
-3. **BERT vs Baselines**:  
-   - **Accuracy de BERT**: 92% vs 85% (Random Forest con TF-IDF).  
+## 📊 Métricas y Hallazgos
+
+  
 
 ## 🎯 Impacto  
 - **Decisiones pedagógicas**: Priorización de módulos con mayor insatisfacción.  
@@ -46,10 +42,12 @@ data/
     ├── raw/                # Comentarios crudos (CSV)
     ├── processed/          # Datos unidos y limpios
 notebooks/
-    ├── 1_EDA.ipynb         #
-    ├── 2_BERT_Sentiment.ipynb  # 
+    ├── Analisis tematico con limpieza antes (bueno).ipynb  # Realiza el analisis de sentimiento con BERT
+    ├── Analitica comentarios AV 2024.ipynb  # Realiza la limpieza del texto, bigramas y trigramas de los datos del 2024.
+    ├── Analitica comentarios AV 2025.ipynb  # Realiza la limpieza del texto, bigramas y trigramas de los datos del 2025.
 images/                      # Contiene las imagenes del readme
-notebooks/
+Top-10-de-palabras-y-nube-de-palabras-(felicitaciones)/   # Contiene el top 10 de palabras por modulo nube de palabras
+Top-10-de-palabras-y-nube-de-palabras-(sugerencias)/   # Contiene el top 10 de palabras por modulo nube de palabras
 
 ```
 
@@ -60,13 +58,3 @@ notebooks/
 3. Para fine-tuning de BERT: Usar GPU (Google Colab recomendado).  
 
 ---
-
-### 💡 **Por qué Destacar BERT?**  
-- **Precisión superior**: Modelo de transformers ajustado para español (ej: `dccuchile/bert-base-spanish-wwm`).  
-- **Contexto lingüístico**: Captura ironía y negaciones (difícil con métodos clásicos como TF-IDF).  
-- **Transfer Learning**: Aplicable a otros proyectos educativos en español.  
-
-**Nota para reclutadores**: Si buscas detalles técnicos adicionales (hiperparámetros de BERT, métricas de evaluación), ¡avísame! Puedo ajustar el enfoque.  
-
---- 
-
