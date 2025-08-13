@@ -28,6 +28,53 @@ eliminar_stopwords()    # Filtra stopwords personalizadas (ej: "de", "que", "la"
 
 ## 📊 Métricas y Hallazgos
 
+### 1. Distribución de Sentimientos (2024 vs 2025)
+![Distribución 2024](images/Distribucion_de_sentimientos_en_sugerencias_2024.png)  
+![Distribución 2025](images/Distribucion_de_sentimientos_en_sugerencias_2025.png)  
+*Clasificación por estrellas: 1★ (negativo), 3★ (neutro), 5★ (positivo)*
+
+---
+
+### 2. Análisis por Módulo (2024)
+![Distribución por módulo 2024](images/Distribución_de_comentarios_positivos_neutros_y_negativos_por_módulo_usando_las_sugerencias_del_2024.png)
+
+**Hallazgos clave:**  
+✅ **Módulos destacados** (2024):  
+- Módulos 23, 22, 21 y 17 con >62% positivos (vs promedio 55.7%)  
+- Diferenciales de +41 a +49 puntos (positivos - negativos)  
+
+⚠️ **Módulos críticos**:  
+- Módulo 14: Solo 37.7% positivos y -1.8 diferencial  
+- Módulo 3: 46% positivos (13.1 diferencial)  
+
+📈 **Tendencias**:  
+- Comentarios positivos aumentan en módulos finales  
+- Neutros estables (19% promedio)  
+
+---
+
+### 3. Análisis por Módulo (2025)
+![Distribución por módulo 2025](images/Distribución_de_comentarios_positivos_neutros_y_negativos_por_módulo_usando_las_sugerencias_del_2025.png)
+
+**Hallazgos clave:**  
+✅ **Módulos destacados** (2025):  
+- Módulos 23 (69% positivos), 22 (66.5%) y 18 (42.6%)  
+- Diferenciales récord (hasta +52 puntos)  
+
+⚠️ **Módulos críticos**:  
+- Módulo 14: 42% positivos (9.4 diferencial)  
+
+📈 **Tendencias**:  
+- Mayor dispersión: mejores máximos pero peores mínimos vs 2024  
+- Relación inversa clara: ↑positivos ⇄ ↓negativos  
+
+---
+
+### 🔍 Conclusiones Comparativas  
+- **Mejora en tops**: Módulo 23 pasó de 66.7% (2024) a 69% (2025)  
+- **Persistencia de problemas**: Módulo 14 sigue siendo crítico en ambos años  
+- **Estabilidad**: Comentarios neutros se mantienen ~15-25%  
+- **Oportunidad**: 11 módulos superan el promedio (55.7% en 2024, 54.4% en 2025)
   
 
 ## 🎯 Impacto  
