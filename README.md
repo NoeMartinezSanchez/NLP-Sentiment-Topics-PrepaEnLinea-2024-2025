@@ -1,7 +1,7 @@
 # Análisis de sentimiento y tópicos en comentarios de estudiantes (Prepa en Línea, 2024-2025)  
 
 ## 🔍 Resumen  
-Proyecto de **Procesamiento de Lenguaje Natural (NLP)** que analiza comentarios de estudiantes hacia asesores virtuales de *Prepa en Línea SEP* (datos 2024-2025). Mediante **BERT** (fine-tuning para español) y técnicas de modelado de tópicos, se identifican:  
+Proyecto de **Procesamiento de Lenguaje Natural (NLP)** que analiza comentarios de estudiantes hacia asesores virtuales de *Prepa en Línea* (datos 2024-2025). Mediante **BERT** (fine-tuning para español) y técnicas de modelado de tópicos, se identifican:  
 - **Patrones de sentimiento** (clasificación binaria y multiclase).  
 - **Temas críticos** (ej: claridad de materiales, comunicación con asesores).  
 - **Recomendaciones basadas en datos** para la mejora pedagógica.  
@@ -11,6 +11,20 @@ Proyecto de **Procesamiento de Lenguaje Natural (NLP)** que analiza comentarios 
 - **Analítica**: Pandas, NumPy, Scikit-learn.  
 - **Visualización**: Plotly (gráficos interactivos), WordCloud.  
 - **Infraestructura**: Jupyter Notebooks, Google Colab (GPU para fine-tuning de BERT).  
+
+## Procesamiento del texto
+
+### Funciones clave:
+limpiar_espacios()      # Normaliza espacios múltiples  
+eliminar_puntuacion()   # Elimina signos de puntuación  
+eliminar_stopwords()    # Filtra stopwords personalizadas (ej: "de", "que", "la")  
+
+### Transformaciones aplicadas:
+1. Lowercasing  
+2. Reemplazo de guiones  
+3. Eliminación de espacios redundantes  
+4. Limpieza de puntuación  
+5. Filtrado de 50+ stopwords en español  
 
 ## 📊 Métricas y Hallazgos  
 1. **Distribución de sentimientos**:  
@@ -36,7 +50,8 @@ results/
 ├── dashboards/ # Gráficos interactivos
 ├── models/ # Modelos guardados (BERT, LDA)
 
-## 📌 Cómo Replicar el Análisis  
+## 📌 Cómo Replicar el Análisis
+
 1. Instalar dependencias: `pip install -r requirements.txt`.  
 2. Ejecutar notebooks en orden numérico.  
 3. Para fine-tuning de BERT: Usar GPU (Google Colab recomendado).  
